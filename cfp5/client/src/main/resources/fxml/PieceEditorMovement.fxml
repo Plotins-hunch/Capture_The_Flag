@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="background" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: grey;" stylesheets="@../css/PieceEditorStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unimannheim.swt.pse.client.controller.PieceEditorMovementController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.47523498535156" minWidth="10.0" prefWidth="186.47523498535156" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="100.0" minHeight="10.0" percentHeight="20.0" prefHeight="100.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="100.0" minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="100.0" minHeight="10.0" percentHeight="30.0" prefHeight="100.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="100.0" minHeight="10.0" percentHeight="30.0" prefHeight="100.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="100.0" minHeight="10.0" percentHeight="30.0" prefHeight="100.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="323.0" text="Create New Piece" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#addPiece" prefHeight="44.0" prefWidth="133.0" text="Create Piece" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="20.0" />
+         </GridPane.margin></Button>
+      <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeWindow" prefHeight="30.0" prefWidth="78.0" text="Back" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin></Button>
+      <VBox alignment="CENTER_LEFT" prefHeight="118.0" prefWidth="70.0" GridPane.rowIndex="3">
+         <children>
+            <TextField fx:id="amountPowerStr" alignment="CENTER" maxHeight="30.0" maxWidth="50.0" promptText="0" text="0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="amountPiecesStr" alignment="CENTER" maxHeight="30.0" maxWidth="50.0" promptText="0" text="0" />
+         </children>
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+         <children>
+            <Label text="Power">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Amount">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <GridPane.margin>
+            <Insets left="75.0" />
+         </GridPane.margin>
+      </VBox>
+      <RadioButton fx:id="normalMovement" mnemonicParsing="false" selected="true" text="Create Movement" GridPane.rowIndex="2">
+         <toggleGroup>
+            <ToggleGroup fx:id="movement" />
+         </toggleGroup>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets bottom="30.0" left="20.0" />
+         </GridPane.margin>
+      </RadioButton>
+      <RadioButton fx:id="specialMovement" mnemonicParsing="false" onAction="#switchToPieceEditorLShape" text="L-Shaped Movement" toggleGroup="$movement" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" top="30.0" />
+         </GridPane.margin>
+      </RadioButton>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="4">
+         <children>
+            <Label alignment="CENTER" layoutX="154.0" layoutY="-1.0" prefHeight="31.0" prefWidth="102.0" text="Movement">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="up" alignment="CENTER" layoutX="180.0" layoutY="40.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <TextField fx:id="upLeft" alignment="CENTER" layoutX="86.0" layoutY="50.0" maxHeight="66.0" maxWidth="50.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <TextField fx:id="upRight" alignment="CENTER" layoutX="274.0" layoutY="50.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <TextField fx:id="right" alignment="CENTER" layoutX="301.0" layoutY="154.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <TextField fx:id="left" alignment="CENTER" layoutX="61.0" layoutY="153.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <TextField fx:id="downLeft" alignment="CENTER" layoutX="82.0" layoutY="259.0" prefHeight="50.0" prefWidth="53.0" promptText="0" />
+            <TextField fx:id="down" alignment="CENTER" layoutX="180.0" layoutY="269.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <TextField fx:id="downRight" alignment="CENTER" layoutX="275.0" layoutY="259.0" prefHeight="50.0" prefWidth="50.0" promptText="0" />
+            <ComboBox fx:id="iconComboBox" accessibleRole="IMAGE_VIEW" layoutX="136.0" layoutY="154.0" prefHeight="50.0" prefWidth="140.0" promptText="Select Icon" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="errorMessage" contentDisplay="CENTER" textFill="RED" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

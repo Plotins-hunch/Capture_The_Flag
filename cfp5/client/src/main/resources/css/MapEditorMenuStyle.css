@@ -1,0 +1,18 @@
+
+#splitPane{
+  -fx-background-size: cover;
+  -fx-background-position: center;
+  -fx-background-repeat: stretch;
+}
+#title{
+  -fx-font: 40 "Serif";
+}
+
+#recentTitle{
+  -fx-font: 40 "Serif";
+  -fx-text-fill: #0;
+}
+.text-field {
+  -fx-background-color: #f1f1f1;
+  height: 50px;
+}

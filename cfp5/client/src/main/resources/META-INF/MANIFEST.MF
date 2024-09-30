@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: de.unimannheim.swt.pse.client.GUI

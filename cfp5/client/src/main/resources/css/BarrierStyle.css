@@ -1,0 +1,6 @@
+.root{
+  -fx-background-image: url('../assets/Barrier.png');
+  -fx-background-size: cover;
+  -fx-border-color: black;
+
+}

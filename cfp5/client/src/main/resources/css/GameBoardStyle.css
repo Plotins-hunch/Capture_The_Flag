@@ -1,0 +1,49 @@
+.root{
+  /*-fx-background-image: url("/assets/mapTMP.png");*/
+  -fx-background-size: cover;
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+}
+.button{
+  -fx-border-color: #000000;
+  -fx-border-width: 5;
+  -fx-font: 30 "Serif";
+  -fx-background-color: none;
+  -fx-opacity: 1;
+}
+#surrenderPane{
+  -fx-padding: 50;
+}
+.label{
+  -fx-font: 30 "Serif";
+  -fx-text-fill: #000000;
+}
+#myMoveTime, #opponentMoveTime, #gameTime{
+  -fx-font-weight: bold;
+}
+#gameTime{
+  -fx-underline: true;
+}
+#myMoveTime, #myClock{
+  -fx-text-fill: #3A6F9E;
+}
+#opponentMoveTime, #opponentClock{
+  -fx-text-fill: #a90505;
+}
+#opponentPiecePower{
+  -fx-font-weight: bold;
+  -fx-border-width: 2;
+  -fx-font-size: 64;
+}
+#oppPiecePane{
+  -fx-padding: 50;
+}
+
+#myPiecePower{
+  -fx-font-weight: bold;
+  -fx-border-width: 2;
+  -fx-font-size: 64;
+}
+#myPowerPane{
+  -fx-padding: 50;
+}

@@ -1,0 +1,25 @@
+.root{
+  -fx-background-color: #FFE793;
+}
+#waitingForPlayers{
+  -fx-background-color: GRAY;
+  -fx-background-radius: 0;
+  -fx-border-color: GRAY;
+  -fx-border-radius: 0;
+  -fx-border-width: 0;
+  -fx-text-fill: #000000;
+  -fx-opacity: 0.8;
+  -fx-font: 30 "Serif";
+  -fx-wrap-text: true;
+  -fx-text-alignment: left;
+  -fx-padding: 0;
+}
+.label{
+  -fx-font: 20 "Serif";
+}
+#AmtOfPlayersLbl{
+  -fx-font-size: 30;
+}
+#title{
+  -fx-font-size: 60;
+}

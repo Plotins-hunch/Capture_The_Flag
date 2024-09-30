@@ -1,0 +1,62 @@
+
+#backBtnPane{
+  -fx-padding: 50;
+  -fx-end-margin: 50;
+}
+#background{
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: stretch;
+}
+
+.text-field {
+  -fx-background-color: #134f5c;
+}
+.label{
+  -fx-font: 20 "Serif";
+}
+#themeErrorMessage{
+  -fx-font: 13 "Serif";
+  -fx-text-fill: #FF0000;
+}
+#title{
+  -fx-font: 54 "Serif";
+}
+.button{
+  -fx-background-color: #C77F16;
+  -fx-background-radius: 0;
+  -fx-border-color: #C77F16;
+  -fx-border-radius: 0;
+  -fx-border-width: 0;
+  -fx-text-fill: #000000;
+  -fx-start-margin: 10;
+  -fx-end-margin: 10;
+  -fx-opacity: 0.8;
+  -fx-font: 35 "Serif";
+}
+.text-field {
+  -fx-font: 20 "Serif";
+  -fx-background-color: #f1f1f1;
+}
+#teamAmountChoiceBox{
+  -fx-font: 20 "Serif";
+  -fx-background-color: #C77F16;
+}
+#strategyChoiceBox{
+  -fx-font: 20 "Serif";
+  -fx-background-color: #C77F16;
+}
+#waterRb{
+  -fx-font: 20 "Serif";
+}
+#waterRb .radio, #waterRb .radio:hover, #waterRb .radio:selected {
+  -fx-background-color: #C77F16;
+}
+
+#landRb{
+  -fx-font: 20 "Serif";
+}
+#landRb .radio, #landRb .radio:hover, #landRb .radio:selected {
+  -fx-background-color: #C77F16;
+}
+

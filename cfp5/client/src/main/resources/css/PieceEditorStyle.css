@@ -1,0 +1,47 @@
+
+#background{
+  -fx-background-size: cover;
+  -fx-background-position: center;
+  -fx-background-repeat: stretch;
+}
+.label{
+  -fx-font: 20 "Serif";
+}
+#errorMessage{
+  -fx-font: 12 "Serif";
+  -fx-text-fill: #FF0000;
+}
+.button{
+  -fx-background-color: #C77F16;
+  -fx-background-radius: 0;
+  -fx-border-color: #C77F16;
+  -fx-border-radius: 0;
+  -fx-border-width: 0;
+  -fx-text-fill: #000000;
+  -fx-start-margin: 10;
+  -fx-end-margin: 10;
+  -fx-opacity: 0.8;
+  -fx-font: 20 "Serif";
+}
+
+.text-field {
+  -fx-font: 20 "Serif";
+  -fx-background-color: #d3d3d3;
+}
+#iconComboBox{
+  -fx-font: 15 "Serif";
+  -fx-background-color: #C77F16;
+}
+#normalMovement{
+  -fx-font: 15 "Serif";
+}
+#normalMovement .radio, #normalMovement .radio:hover, #normalMovement .radio:selected {
+  -fx-background-color: #C77F16;
+}
+
+#specialMovement{
+  -fx-font: 15 "Serif";
+}
+#specialMovement .radio, #specialMovement .radio:hover, #specialMovement .radio:selected {
+  -fx-background-color: #C77F16;
+}

@@ -1,0 +1,44 @@
+
+#backBtnPane{
+  -fx-padding: 50;
+  -fx-end-margin: 50;
+}
+.root{
+  -fx-background-color: #FFE793;
+}
+#rndPane{
+  -fx-background-color: #FFE793;
+  -fx-opacity: 0.8;
+}
+
+
+#waitingForPlayers{
+  -fx-background-color: GRAY;
+  -fx-background-radius: 0;
+  -fx-border-color: GRAY;
+  -fx-border-radius: 0;
+  -fx-border-width: 0;
+  -fx-text-fill: #000000;
+  -fx-opacity: 0.8;
+  -fx-font: 30 "Serif";
+  -fx-wrap-text: true;
+}
+.label{
+  -fx-font: 20 "Serif";
+}
+#title{
+  -fx-font: 54 "Serif";
+}
+#addBot{
+  -fx-background-color: #FFAD33;
+  -fx-background-radius: 0;
+  -fx-border-color: #FFAD33;
+  -fx-border-radius: 0;
+  -fx-border-width: 0;
+  -fx-text-fill: #000000;
+  -fx-opacity: 0.8;
+  -fx-font: 54 "Serif";
+}
+#gameSessionLabel{
+  -fx-font: 20 "Serif";
+}

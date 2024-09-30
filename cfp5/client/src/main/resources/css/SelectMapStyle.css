@@ -1,0 +1,41 @@
+/*#bgPane{
+    -fx-background-color: #000000;
+}
+#splitPane{
+    -fx-background-color: #FFE793;
+}
+.button{
+    -fx-background-color: #FFAD33;
+    -fx-background-radius: 0;
+    -fx-border-color: #FFAD33;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+    -fx-text-fill: #000000;
+    -fx-start-margin: 10;
+    -fx-end-margin: 10;
+    -fx-opacity: 0.8;
+    -fx-font: 64 "Serif";
+}
+#createAnchorPane{
+    -fx-padding: 50;
+}
+#backButtonPane{
+    -fx-padding: 60;
+
+}
+#recentTitle{
+    -fx-font: 64 "Serif";
+    -fx-text-fill: #000000;
+}
+#selectMapTitle{
+    -fx-font: 64 "Serif";
+    -fx-text-fill: #000000;
+}
+.split-pane-divider{
+    -fx-background-color: #000000;
+     -fx-pref-height: 20;
+}
+.label{
+    -fx-font: 64 "Serif";
+    -fx-text-fill: #000000;
+}*/
